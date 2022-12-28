@@ -6,6 +6,11 @@ Requirements:
 - Numpy
 - Matplotlib
 
+# Kalman Filter
+
+
+
+# Model
 
 ```math
     A = \begin{bmatrix}
@@ -50,6 +55,14 @@ Requirements:
             0 & 0 & 0 & \sigma_{\dot{y}}^2 & 0 & 0 \\
             0 & 0 & 0 & 0 & \sigma_{z}^2 & 0  \\
             0 & 0 & 0 & 0 & 0 & \sigma_{\dot{z}}^2 
+        \end{bmatrix} \\
+    p = \begin{bmatrix}
+            P_{x}^2 & 0 & 0 & 0 & 0 & 0 \\
+            0 & P_{\dot{x}}^2 & 0 & 0 & 0 & 0 \\
+            0 & 0 & P_{y}^2 & 0 & 0 & 0 \\
+            0 & 0 & 0 & P_{\dot{y}}^2 & 0 & 0 \\
+            0 & 0 & 0 & 0 & P_{z}^2 & 0  \\
+            0 & 0 & 0 & 0 & 0 & P_{\dot{z}}^2 
         \end{bmatrix} \\
         
 ```
