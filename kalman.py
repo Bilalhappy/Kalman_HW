@@ -181,6 +181,7 @@ def kalman(Xmatrx, obs_err, init, pro_err,aX):
     pc = 0
     while pc < i:
         B[pc][pc] = 0.5 * init[1]**2
+        B[pc+1][pc+1] = init[1]
         pc += 2
     
     H           =  np.identity(i)

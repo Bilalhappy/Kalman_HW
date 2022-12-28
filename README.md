@@ -8,8 +8,6 @@ Requirements:
 
 # Kalman Filter
 
-```X  = State Matrix
-```
 ```math
     X_{kp} = AX_{k-1} + B \mu  + \omega_k
 ```
@@ -60,6 +58,24 @@ Requirements:
             z + \dot{z} \Delta t\\
             \dot{z} 
         \end{bmatrix} \\
+```
+```math        
+    B = \begin{bmatrix}
+            \Delta t^2 & 0 & 0 & 0 & 0 & 0 \\
+            0 & \Delta t & 0 & 0 & 0 & 0 \\
+            0 & 0 & \Delta t^2 & 0 & 0 & 0 \\
+            0 & 0 & 0 & \Delta t & 0 & 0 \\
+            0 & 0 & 0 & 0 & \Delta t^2 & 0  \\
+            0 & 0 & 0 & 0 & 0 & \Delta t 
+        \end{bmatrix} \\
+    \mu = \begin{bmatrix}
+            \ddot{x} \\
+            \ddot{x} \\
+            \ddot{y} \\
+            \ddot{y} \\
+            \ddot{z} \\
+            \ddot{z} 
+        \end{bmatrix} \\   
 ```
 ```math        
     H = \begin{bmatrix}
