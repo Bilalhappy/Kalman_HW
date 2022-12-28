@@ -131,7 +131,7 @@ Means of measurements variance were used as process variance values.
 ```
 
 ```math
-    X_{kp} =
+    X_{kp} =  AX_{k-1} + B \mu =
         \begin{bmatrix}
             x_{k-1}+\dot{x}_{k-1}\Delta t+\ddot{x}_{k-1}\frac{1}{2}\Delta t^2 \\
             \dot{x}_{k-1} +\ddot{x}_{k-1}\Delta t \\
