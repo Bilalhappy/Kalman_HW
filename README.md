@@ -133,12 +133,12 @@ Means of measurements variance were used as process variance values.
 ```math
     X_{kp} =
         \begin{bmatrix}
-            x_{k-1}+\dot{x}_{k-1}\Delta t+\ddot{x}\frac{1}{2}\Delta t^2 \\
-            \dot{x}_{k-1} +\ddot{x}\Delta t \\
-            y_{k-1}+\dot{y}_{k-1}\Delta t+\ddot{y}\frac{1}{2}\Delta t^2  \\
-            \dot{y}_{k-1} +\ddot{y}\Delta t  \\
-            z_{k-1}+\dot{z}_{k-1}\Delta t+\ddot{z}\frac{1}{2}\Delta t^2  \\
-            \dot{z}_{k-1} +\ddot{z}\Delta t 
+            x_{k-1}+\dot{x}_{k-1}\Delta t+\ddot{x}_{k-1}\frac{1}{2}\Delta t^2 \\
+            \dot{x}_{k-1} +\ddot{x}_{k-1}\Delta t \\
+            y_{k-1}+\dot{y}_{k-1}\Delta t+\ddot{y}_{k-1}\frac{1}{2}\Delta t^2  \\
+            \dot{y}_{k-1} +\ddot{y}_{k-1}\Delta t  \\
+            z_{k-1}+\dot{z}_{k-1}\Delta t+\ddot{z}_{k-1}\frac{1}{2}\Delta t^2  \\
+            \dot{z}_{k-1} +\ddot{z}_{k-1}\Delta t 
         \end{bmatrix} \\
 ```
 # References
