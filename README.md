@@ -105,7 +105,7 @@ Requirements:
         \end{bmatrix} \\
         
 ```
-Mean of measurements covariance were used as process covariance values.
+Means of measurements variance were used as process variance values.
 ```math 
     P = \begin{bmatrix}
             \overline{\sigma_{x}}^2 & 0 & 0 & 0 & 0 & 0 \\
