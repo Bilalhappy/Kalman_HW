@@ -8,16 +8,47 @@ Requirements:
 
 
 ```math
-    A = \left[ 
-        \begin{bmatrix}
-            1 & \delta t & 0 & 0 & 0 & 0 \\
+    A = \begin{bmatrix}
+            1 & \Delta t & 0 & 0 & 0 & 0 \\
             0 & 1        & 0 & 0 & 0 & 0 \\
-            0 & 0        & 1 & \delta t  & 0 & 0 \\
+            0 & 0        & 1 & \Delta t  & 0 & 0 \\
             0 & 0        & 0 & 1 & 0 & 0 \\
-            0 & 0        & 0 & 0 & 1 & \delta t  \\
-            0 &          & 0 & 0 & 0 & 1 
-        \end{bmatrix}
-        \right]
+            0 & 0        & 0 & 0 & 1 & \Delta t  \\
+            0 & 0        & 0 & 0 & 0 & 1 
+        \end{bmatrix} \\
+    X = \begin{bmatrix}
+            x \\
+            \dot{x} \\
+            y \\
+            \dot{y} \\
+            z \\
+            \dot{z} \\
+        \end{bmatrix} \\
+    AX = \begin{bmatrix}
+            x + \dot{x} \Delta t\\
+            \dot{x} \\
+            y + \dot{y} \Delta t\\
+            \dot{y} \\
+            z + \dot{z} \Delta t\\
+            \dot{z} \\
+        \end{bmatrix} \\
+    H = \begin{bmatrix}
+            1 & 0 & 0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 & 0 & 0 \\
+            0 & 0 & 1 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 & 1 & 0  \\
+            0 & 0 & 0 & 0 & 0 & 0 
+        \end{bmatrix} \\
+    R = \begin{bmatrix}
+            \sigma_{x}^2 & 0 & 0 & 0 & 0 & 0 \\
+            0 & \sigma_{\dot{x}}^2 & 0 & 0 & 0 & 0 \\
+            0 & 0 & \sigma_{y}^2 & 0 & 0 & 0 \\
+            0 & 0 & 0 & \sigma_{\dot{y}}^2 & 0 & 0 \\
+            0 & 0 & 0 & 0 & \sigma_{z}^2 & 0  \\
+            0 & 0 & 0 & 0 & 0 & \sigma_{\dot{z}}^2 
+        \end{bmatrix} \\
+        
 ```
 # References
 
