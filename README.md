@@ -130,6 +130,17 @@ Means of measurements variance were used as process variance values.
 
 ```
 
+```math
+    X_{kp} =
+        \begin{bmatrix}
+            x_{k-1}+\dot{x}_{k-1}\Delta t+\ddot{x}\frac{1}{2}\Delta t^2 \\
+            \dot{x}_{k-1} +\ddot{x}\Delta t \\
+            y_{k-1}+\dot{y}_{k-1}\Delta t+\ddot{y}\frac{1}{2}\Delta t^2  \\
+            \dot{y}_{k-1} +\ddot{y}\Delta t  \\
+            z_{k-1}+\dot{z}_{k-1}\Delta t+\ddot{z}\frac{1}{2}\Delta t^2  \\
+            \dot{z}_{k-1} +\ddot{z}\Delta t 
+        \end{bmatrix} \\
+```
 # References
 
 - Laurichesse, D., Privat, A., "An Open-source PPP Client Implementation for the CNES PPP-WIZARD Demonstrator," Proceedings of the 28th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GNSS+ 2015), Tampa, Florida, September 2015, pp. 2780-2789.
