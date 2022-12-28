@@ -6,6 +6,15 @@ Requirements:
 - Numpy
 - Matplotlib
 
+Project Steps:
+- [Input data file](output_lowlevel_itu_kampus_RAIM) contains the (x,y,z) ECEF cartesian coordinates and their variance values.
+- Velocity values were calculated from position data by using ```disp2vel``` function.
+- Velocity variance values were calculated from position variance data by using ```Sdisp2vel``` function.
+- Acceleration values were calculated from velocity data by using ```disp2vel``` function.
+- Kalman filtering was done by using ```kalman``` function.
+- The obtained (x,y,z) ECEF cartesian coordinates were converted to ellipsoidal coordinates (φ,λ,h).
+- Ellipsoidal coordinates were converted to projected/UTM coordinates (Easting, Northing).
+- 2D and 3D graphs were drawn.
 # Kalman Filter
 
 ```math

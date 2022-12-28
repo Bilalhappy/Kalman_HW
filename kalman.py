@@ -89,28 +89,28 @@ def output_read(fname):
         northing.append(Y)
     return epoch, easting, northing, height, X_list, Y_list, Z_list,XS_list,YS_list,ZS_list
 
-def Sdisp2vel(data):
+def Sdisp2vel(data,dt = 1):
     vel = []
     i = 1
     while i < (len(data)):
-        vel.append((data[i-1]**2 + data[i]**2)**0.5)
+        vel.append((data[i-1]**2 + data[i]**2)**0.5 /dt) 
         i+=1
     return vel
 
 
-def disp2vel(data):
+def disp2vel(data,dt = 1):
     vel = []
     i = 1
     while i < (len(data)):
-        vel.append((data[i] - data[i-1]))
+        vel.append((data[i] - data[i-1])/dt)
         i+=1
     return vel
 
-def vel2acc(data):
+def vel2acc(data,dt = 1):
     acc = []
     i = 1
     while i < (len(data)):
-        acc.append((data[i]-data[i-1]))
+        acc.append((data[i]-data[i-1])/dt)
         i+=1
     return acc
 def graph_E_N2(var1,var2,Svar1,Svar2,Tvar1,Tvar2,fname):
