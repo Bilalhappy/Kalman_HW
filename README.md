@@ -121,11 +121,11 @@ Means of measurements variance were used as process variance values.
 ```math 
     P = \begin{bmatrix}
             \overline{\sigma_{x}}^2 & 0 & 0 & 0 & 0 & 0 \\
-            0 & \overline{\sigma_{x}}^2 & 0 & 0 & 0 & 0 \\
+            0 & \overline{\sigma_{\dot{x}}}^2 & 0 & 0 & 0 & 0 \\
             0 & 0 &\overline{\sigma_{y}}^2 & 0 & 0 & 0 \\
-            0 & 0 & 0 & \overline{\sigma_{y}}^2 & 0 & 0 \\
+            0 & 0 & 0 & \overline{\sigma_{\dot{y}}}^2 & 0 & 0 \\
             0 & 0 & 0 & 0 & \overline{\sigma_{z}}^2 & 0  \\
-            0 & 0 & 0 & 0 & 0 & \overline{\sigma_{z}}^2 
+            0 & 0 & 0 & 0 & 0 & \overline{\sigma_{\dot{z}}}^2 
         \end{bmatrix} \\
 
 ```
