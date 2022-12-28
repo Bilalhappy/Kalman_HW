@@ -71,11 +71,11 @@ Project Steps:
 ```
 ```math        
     B = \begin{bmatrix}
-            \Delta t^2 & 0 & 0 & 0 & 0 & 0 \\
+            \frac{1}{2}\Delta t^2 & 0 & 0 & 0 & 0 & 0 \\
             0 & \Delta t & 0 & 0 & 0 & 0 \\
-            0 & 0 & \Delta t^2 & 0 & 0 & 0 \\
+            0 & 0 & \frac{1}{2}\Delta t^2 & 0 & 0 & 0 \\
             0 & 0 & 0 & \Delta t & 0 & 0 \\
-            0 & 0 & 0 & 0 & \Delta t^2 & 0  \\
+            0 & 0 & 0 & 0 & \frac{1}{2}\Delta t^2 & 0  \\
             0 & 0 & 0 & 0 & 0 & \Delta t 
         \end{bmatrix} \\
     \mu = \begin{bmatrix}
