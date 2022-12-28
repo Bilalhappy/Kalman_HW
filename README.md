@@ -8,9 +8,7 @@ Requirements:
 
 # Kalman Filter
 
-$X = $ State Matrix
-
-
+```math X  =``` State Matrix
 
 ```math
     X_{kp} = AX_{k-1} + B \mu  + \omega_k
