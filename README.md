@@ -22,7 +22,7 @@ Requirements:
             y \\
             \dot{y} \\
             z \\
-            \dot{z} \\
+            \dot{z} 
         \end{bmatrix} \\
     AX = \begin{bmatrix}
             x + \dot{x} \Delta t\\
@@ -30,8 +30,10 @@ Requirements:
             y + \dot{y} \Delta t\\
             \dot{y} \\
             z + \dot{z} \Delta t\\
-            \dot{z} \\
+            \dot{z} 
         \end{bmatrix} \\
+```
+```math        
     H = \begin{bmatrix}
             1 & 0 & 0 & 0 & 0 & 0 \\
             0 & 0 & 0 & 0 & 0 & 0 \\
@@ -40,6 +42,7 @@ Requirements:
             0 & 0 & 0 & 0 & 1 & 0  \\
             0 & 0 & 0 & 0 & 0 & 0 
         \end{bmatrix} \\
+        
     R = \begin{bmatrix}
             \sigma_{x}^2 & 0 & 0 & 0 & 0 & 0 \\
             0 & \sigma_{\dot{x}}^2 & 0 & 0 & 0 & 0 \\
