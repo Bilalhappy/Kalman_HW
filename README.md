@@ -29,7 +29,7 @@ Requirements:
 ```
 
 ```math
-    P_k = (I - KG H) P_{kp}
+    P_k = (I - KG \cdot H) P_{kp}
 ```
 # Model
 
