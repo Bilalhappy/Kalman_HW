@@ -142,11 +142,7 @@ def graph_E_N2(var1,var2,Svar1,Svar2,Tvar1,Tvar2,fname):
         plt.scatter(Tvar2[:i],Tvar1[:i],c='g',marker="o", s = 2,label="Predicted rover")
         
         plt.pause(0.001)
-    #plt.legend(loc=1, handlelength=1,  fontsize=9,markerscale=10)
     plt.show()
-    
-    
-    
 
 def graph_E_N(var1,var2,Svar1,Svar2,Tvar1,Tvar2,fname):
     var1 = np.array(var1)
@@ -224,7 +220,7 @@ def kalman(Xmatrx, obs_err, init, pro_err,aX):
                 if pc !=pk:
                     KG[pc][pk] = 0
         
-        Y_k         = np.dot(C, Xmatrx[j].reshape((-1, 1)))
+        Y_k         = np.dot(H, Xmatrx[j].reshape((-1, 1)))
         X_k         = X_kp + np.dot(KG, (Y_k - np.dot(H, X_kp)))
         P_k         = np.dot((I - np.dot(KG, H)), P_kp)
         
@@ -268,7 +264,7 @@ aZ.append(0)
 del Z_list[-1]
 del ZS_list[-1]
 
-X              = np.array((list(zip(X_list, vX, Y_list, vY ,Z_list, vZ))))
+X               = np.array((list(zip(X_list, vX, Y_list, vY ,Z_list, vZ))))
 obs_err         = np.array((list(zip(XS_list, SvX,YS_list, SvY, ZS_list, SvZ))), dtype = float)
 pro_err         = np.array(([np.mean(XS_list), np.mean(SvX), np.mean(YS_list), np.mean(SvY), np.mean(ZS_list), np.mean(SvZ)]), dtype = float)
 init            = np.array(([10],[1],[0]), dtype = float)
@@ -307,6 +303,7 @@ for i in range(len(x_p)):
     height3.append(h)
     easting3.append(S)
     northing3.append(Y)
+
 graph_E_N(northing,easting,northing2,easting2,northing3,easting3,"kalman")
 
 fig = plt.figure()
