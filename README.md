@@ -1,6 +1,6 @@
 # Kalman_HW
 
-Kalman Filter Project by using Real-Time Kinematic Precise Point Positioning (RTK-PPP) output data.
+Kalman Filter Project by using Real-Time Kinematic positioning data. Positioning data were obtained by using PPP-WIZARD software. GNSS data was acquired with a GNSS receiver attached to the pedestrian's backpack.
 
 Requirements:
 - Numpy
@@ -10,11 +10,12 @@ Project Steps:
 - [Input data file](output_lowlevel_itu_kampus_RAIM) contains the (x,y,z) ECEF cartesian coordinates and their variance values.
 - Velocity values were calculated from position data by using ```disp2vel``` function.
 - Velocity variance values were calculated from position variance data by using ```Sdisp2vel``` function.
-- Acceleration values were calculated from velocity data by using ```disp2vel``` function.
+- Acceleration values were calculated from velocity data by using ```vel2acc``` function.
 - Kalman filtering was done by using ```kalman``` function.
 - The obtained (x,y,z) ECEF cartesian coordinates were converted to ellipsoidal coordinates (φ,λ,h).
 - Ellipsoidal coordinates were converted to projected/UTM coordinates (Easting, Northing).
 - 2D and 3D graphs were drawn.
+
 # Kalman Filter
 
 ```math
@@ -114,7 +115,9 @@ Project Steps:
         \end{bmatrix} \\
         
 ```
+
 Means of measurements variance were used as process variance values.
+
 ```math 
     P = \begin{bmatrix}
             \overline{\sigma_{x}}^2 & 0 & 0 & 0 & 0 & 0 \\
@@ -126,6 +129,7 @@ Means of measurements variance were used as process variance values.
         \end{bmatrix} \\
 
 ```
+
 # References
 
 - Laurichesse, D., Privat, A., "An Open-source PPP Client Implementation for the CNES PPP-WIZARD Demonstrator," Proceedings of the 28th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GNSS+ 2015), Tampa, Florida, September 2015, pp. 2780-2789.
