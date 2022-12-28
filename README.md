@@ -8,8 +8,29 @@ Requirements:
 
 # Kalman Filter
 
+```math
+    X_{kp} = AX_{k-1} + B \mu  + \omega_k
+```
 
+```math
+    P_{kp} = AP_{k-1}A^T + Q_k
+```
 
+```math
+    KG = \frac{P_{kp}H}{HP_{kp}H^T + R}
+```
+
+```math
+    Y_k = H X_{k} + z_k
+```
+
+```math
+    X_k = X_{kp}+ KG(Y_k - HX_{kp})
+```
+
+```math
+    P_k = (I - KG H) P_{kp}
+```
 # Model
 
 ```math
