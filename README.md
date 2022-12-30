@@ -26,7 +26,7 @@ Kalman Filter is an iteartive mathematical process that uses a set of equations 
 
 ```
     KG = Kalman Gain
-    E~E~S~T = Error in estimate
+    E<sub>EST</sub> = Error in estimate
     E_{MEA} = Error in measurement
     EST_{t} = Current estimate
     EST_{t-1} = Previous estimate
