@@ -25,12 +25,17 @@ Project Steps:
 Kalman Filter is an iteartive mathematical process that uses a set of equations and consecutive data inputs to quickly estimate the true value, position, velocity etc. of the object being measured when the measured values contain unpredicted or random error, uncertainty or variation.
 
 
-KG = Kalman Gain
-E<sub>EST</sub> = Error in estimate
-E~MEA~ = Error in measurement
-EST_{t} = Current estimate
-EST_{t-1} = Previous estimate
-MEA = Measurement
+KG                  = Kalman Gain
+
+E<sub>EST</sub>     = Error in estimate
+
+E<sub>MEA</sub>     = Error in measurement
+
+EST<sub>t</sub>     = Current estimate
+
+EST<sub>t-1</sub>   = Previous estimate
+
+MEA                 = Measurement
 
 
 <div align="center">
