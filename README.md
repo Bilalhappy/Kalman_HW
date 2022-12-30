@@ -66,28 +66,27 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/md.png">
 </div>
 
-```math
-    X = State Matrix
 
-    P = Process Covariance Matrix (Errors in Estimate)
+X = State Matrix
 
-    \mu = Control Variable Matrix
+P = Process Covariance Matrix (Errors in Estimate)
 
-    \omega = Predicted State Noise Matrix
+$\mu$ = Control Variable Matrix
 
-    Q = Process Noise Covariance Matrix
+$\omega$ = Predicted State Noise Matrix
 
-    Y = Measurement of State
+Q = Process Noise Covariance Matrix
 
-    z_k = Measurement Noise (uncertainity)
+Y = Measurement of State
 
-    I = Identity Matrix
+z<sub>k</sub> = Measurement Noise (uncertainity)
 
-    KG = Kalman Gain
+I = Identity Matrix
 
-    H = Observation Matrix
+KG = Kalman Gain
 
-```
+H = Observation Matrix
+
 
 ```math
     X_{kp} = AX_{k-1} + B \mu  + \omega_k
