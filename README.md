@@ -43,7 +43,7 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/KG.png">
 </div>
 
-##Multi-Dimensional Model
+## Multi-Dimensional Model
 
 <div align="center">
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/md.png">
