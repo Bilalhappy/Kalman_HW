@@ -37,7 +37,6 @@ The kalman gain is used to determine how much of the measurements to use to upda
 <div align="center">
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/KG.png">
 </div>
-![](https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/KG.png)
 
 If error of a measurement or an estimation is higher, it’s less weighted thanks to the Kalman Gain.​
 
