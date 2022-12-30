@@ -24,7 +24,7 @@ Project Steps:
 
 Kalman Filter is an iteartive mathematical process that uses a set of equations and consecutive data inputs to quickly estimate the true value, position, velocity etc. of the object being measured when the measured values contain unpredicted or random error, uncertainty or variation.
 
-```md
+```
     KG = Kalman Gain
     E~E~S~T = Error in estimate
     E_{MEA} = Error in measurement
@@ -61,6 +61,7 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/md.png">
 </div>
 
+```
 X = State Matrix
 
 P = Process Covariance Matrix (Errors in Estimate)
@@ -81,6 +82,7 @@ KG = Kalman Gain
 
 H = Observation Matrix
 
+```
 
 ```math
     X_{kp} = AX_{k-1} + B \mu  + \omega_k
