@@ -21,18 +21,20 @@ Project Steps:
 Kalman Filter is an iteartive mathematical process that uses a set of equations and consecutive data inputs to quickly estimate the true value, position, velocity etc. of the object being measured when the measured values contain unpredicted or random error, uncertainty or variation.
 
 
-![](https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/chart.png)
+<div align="center">
+    <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/chart.png">
+</div>
 
 The kalman gain is used to determine how much of the measurements to use to update the new estimate.​
 
 ```math
-    KG = \frac{E_{EST}}{E_{EST}+E_{MEA}},    0<= KG <= 1
+    KG = \frac{E_{EST}}{E_{EST}+E_{MEA}},    0 \leq KG \leq 1
 ```
 ```math
     EST_{t} = EST_{t-1} + KG(MEA - EST_{t-1})
 ```
 ```math
-    E_{EST_{t}} = \frac{E_{MEA} \cdot E_{EST_{t-1}}}{E_{MEA} + E_{EST_{t-1}}} => E_{EST_{t}} = (1-KG)\cdot E_{EST_{t-1}}
+    E_{EST_{t}} = \frac{E_{MEA} \cdot E_{EST_{t-1}}}{E_{MEA} + E_{EST_{t-1}}} \Rightarrow E_{EST_{t}} = (1-KG)\cdot E_{EST_{t-1}}
 ```
 <div align="center">
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/KG.png">
