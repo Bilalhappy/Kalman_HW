@@ -22,6 +22,21 @@ Kalman Filter is an iteartive mathematical process that uses a set of equations 
 
 ![](https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/chart.png)
 
+The kalman gain is used to determine how much of the measurements to use to update the new estimate.​
+
+```math
+    KG = \frac{E_{EST}}{E_{EST}+E_{MEA}},    0<= KG <= 1
+```
+```math
+    EST_{t} = EST_{t-1} + KG(MEA - EST_{t-1})
+```
+```math
+    E_{EST_{t}} = \frac{E_{MEA} \cdot E_{EST_{t-1}}}{E_{MEA} + E_{EST_{t-1}}} => E_{EST_{t}} = (1-KG)\cdot E_{EST_{t-1}}
+```
+![](https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/KG.png)
+
+If error of a measurement or an estimation is higher, it’s less weighted thanks to the Kalman Gain.​
+
 ```math
     X_{kp} = AX_{k-1} + B \mu  + \omega_k
 ```
