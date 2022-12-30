@@ -27,7 +27,7 @@ Kalman Filter is an iteartive mathematical process that uses a set of equations 
 
 KG = Kalman Gain
 E<sub>EST</sub> = Error in estimate
-E_{MEA} = Error in measurement
+E~MEA~ = Error in measurement
 EST_{t} = Current estimate
 EST_{t-1} = Previous estimate
 MEA = Measurement
@@ -61,26 +61,26 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/md.png">
 </div>
 
-```
-X = State Matrix
+```math
+    X = State Matrix
 
-P = Process Covariance Matrix (Errors in Estimate)
+    P = Process Covariance Matrix (Errors in Estimate)
 
-\mu = Control Variable Matrix
+    \mu = Control Variable Matrix
 
-\omega = Predicted State Noise Matrix
+    \omega = Predicted State Noise Matrix
 
-Q = Process Noise Covariance Matrix
+    Q = Process Noise Covariance Matrix
 
-Y = Measurement of State
+    Y = Measurement of State
 
-z~k = Measurement Noise (uncertainity)
+    z_k = Measurement Noise (uncertainity)
 
-I = Identity Matrix
+    I = Identity Matrix
 
-KG = Kalman Gain
+    KG = Kalman Gain
 
-H = Observation Matrix
+    H = Observation Matrix
 
 ```
 
