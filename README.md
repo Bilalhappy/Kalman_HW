@@ -60,6 +60,7 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
 <div align="center">
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/md.png">
 </div>
+
 ```md
     X = State Matrix
     P = Process Covariance Matrix (Errors in Estimate)
@@ -72,6 +73,7 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
     KG = Kalman Gain
     H = Observation Matrix
 ```
+
 ```math
     X_{kp} = AX_{k-1} + B \mu  + \omega_k
 ```
