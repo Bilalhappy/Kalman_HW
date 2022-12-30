@@ -1,6 +1,10 @@
 # Kalman_HW
 
-Kalman Filter Project by using Real-Time Kinematic positioning data. Positioning data were obtained by using PPP-WIZARD software. GNSS data was acquired with a GNSS receiver attached to the pedestrian's backpack.
+Kalman Filter Project by using Real-Time Kinematic positioning data. Real-Time Precise Point Positioning (RT-PPP) application was carried out by using PPP-WIZARD open-source software. PPP-WIZARD software was developed by National Center for Space Studies (CNES).​ GNSS data was acquired with a GNSS receiver attached to the pedestrian's backpack.
+
+- Sampling Rate: 1 Hz
+- Time of first observation : 26/10/2021 11:29:54 (UTC+0)
+- Time of last observation  : 26/10/2021 13:24:19 (UTC+0)
 
 Requirements:
 - Numpy
@@ -20,6 +24,14 @@ Project Steps:
 
 Kalman Filter is an iteartive mathematical process that uses a set of equations and consecutive data inputs to quickly estimate the true value, position, velocity etc. of the object being measured when the measured values contain unpredicted or random error, uncertainty or variation.
 
+```md
+    KG = Kalman Gain \\
+    E_{EST} = Error in estimate\\
+    E_{MEA} = Error in measurement\\
+    EST_{t} = Current estimate\\
+    EST_{t-1} = Previous estimate\\
+    MEA = Measurement\\
+```
 
 <div align="center">
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/chart.png">
@@ -48,7 +60,18 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
 <div align="center">
     <img src="https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/md.png">
 </div>
-
+```md
+    X = State Matrix \\
+    P = Process Covariance Matrix (Errors in Estimate) \\
+    \mu = Control Variable Matrix \\
+    \omega = Predicted State Noise Matrix \\
+    Q = Process Noise Covariance Matrix \\
+    Y = Measurement of State \\
+    z_{k} = Measurement Noise (uncertainity) \\
+    I = Identity Matrix \\
+    KG = Kalman Gain \\
+    H = Observation Matrix \\
+```
 ```math
     X_{kp} = AX_{k-1} + B \mu  + \omega_k
 ```
@@ -136,6 +159,9 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
             0 & 0 & 0 & 0 & \sigma_{z}^2 & 0  \\
             0 & 0 & 0 & 0 & 0 & \sigma_{\dot{z}}^2 
         \end{bmatrix} \\
+```
+
+```math
     P = \begin{bmatrix}
             P_{x}^2 & 0 & 0 & 0 & 0 & 0 \\
             0 & P_{\dot{x}}^2 & 0 & 0 & 0 & 0 \\
