@@ -73,7 +73,7 @@ Q = Process Noise Covariance Matrix
 
 Y = Measurement of State
 
-z_{k} = Measurement Noise (uncertainity)
+z~k = Measurement Noise (uncertainity)
 
 I = Identity Matrix
 
