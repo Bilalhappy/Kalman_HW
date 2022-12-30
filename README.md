@@ -20,7 +20,7 @@ Project Steps:
 
 Kalman Filter is an iteartive mathematical process that uses a set of equations and consecutive data inputs to quickly estimate the true value, position, velocity etc. of the object being measured when the measured values contain unpredicted or random error, uncertainty or variation.
 
-![](https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/chart.png){align= "center"}
+![](https://github.com/Bilalhappy/Kalman_HW/blob/master/pics/chart.png#center)
 
 The kalman gain is used to determine how much of the measurements to use to update the new estimate.​
 
