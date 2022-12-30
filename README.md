@@ -67,6 +67,7 @@ If error of a measurement or an estimation is higher, it’s less weighted thank
 </div>
 
 
+
 X = State Matrix
 
 P = Process Covariance Matrix (Errors in Estimate)
